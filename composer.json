@@ -2,12 +2,11 @@
 	"name": "kenshodigital/kirby-minify",
 	"description": "Minifies HTML and XML output for Kirby projects.",
 	"type": "kirby-plugin",
-	"version": "1.0.0",
+	"version": "1.0.1",
 	"license": "MIT",
 	"authors": [
 		{
-			"name": "Jens Scherbl",
-			"email": "jens@kensho.digital"
+			"name": "Jens Scherbl"
 		}
 	],
 	"support": {

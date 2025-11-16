@@ -14,12 +14,12 @@ final class Template extends \Kirby\Template\Template
 	{
 		$output = parent::render(data: $data);
 
-		if ($this->type === "html") {
+		if ($this->type === 'html') {
 			$document = HTMLDocument::createFromString(source: $output);
 			$this->minify($document);
 			return $document->saveHtml();
 		}
-		if ($this->type === "xml") {
+		if ($this->type === 'xml') {
 			$document = XMLDocument::createFromString(source: $output);
 			$this->minify($document);
 			return $document->saveXml();
@@ -31,7 +31,7 @@ final class Template extends \Kirby\Template\Template
 	{
 		$xpath = new XPath(document: $document);
 
-		foreach ($xpath->query(expression: "//comment()") as $comment) {
+		foreach ($xpath->query(expression: '//comment()') as $comment) {
 			/**
 			 * Removes comments.
 			 *
@@ -39,7 +39,7 @@ final class Template extends \Kirby\Template\Template
 			 */
 			$comment->parentNode->removeChild(child: $comment);
 		}
-		foreach ($xpath->query(expression: "//text()") as $text) {
+		foreach ($xpath->query(expression: '//text()') as $text) {
 			/**
 			 * Removes whitespace around text nodes.
 			 *

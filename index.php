@@ -4,14 +4,14 @@ use Kensho\Minify\Template;
 use Kirby\Cms\App;
 
 App::plugin(
-	name: "kensho/minify",
+	name: 'kensho/minify',
 	extends: [
-		"components" => [
-			"template" => fn(
+		'components' => [
+			'template' => fn(
 				App $kirby,
 				string $name,
-				string $type = "html",
-				string $defaultType = "html",
+				string $type = 'html',
+				string $defaultType = 'html',
 			): Template => new Template(
 				name: $name,
 				type: $type,

@@ -1,0 +1,34 @@
+{
+	"name": "kenshodigital/kirby-minify",
+	"description": "Minifies HTML and XML output for Kirby projects.",
+	"type": "kirby-plugin",
+	"version": "1.0.0",
+	"license": "MIT",
+	"authors": [
+		{
+			"name": "Jens Scherbl"
+		}
+	],
+	"support": {
+		"source": "https://github.com/kenshodigital/kirby-minify",
+		"issues": "https://github.com/kenshodigital/kirby-minify/issues"
+	},
+	"require": {
+		"php": "^8.5",
+		"ext-dom": "*",
+		"getkirby/cms": "^5.2",
+		"getkirby/composer-installer": "^1.2"
+	},
+	"replace": {
+		"kenshodigital/kirby-html": "^1.0",
+		"kenshodigital/kirby-xhtml": "^2.0"
+	},
+	"autoload": {
+		"psr-4": {
+			"Kensho\\Minify\\": "src"
+		}
+	},
+	"extra": {
+		"installer-name": "minify"
+	}
+}

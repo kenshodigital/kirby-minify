@@ -29,3 +29,19 @@ composer require kenshodigital/kirby-minify ^1.0
 ### Setup
 
 The plugin works out-of-the-box, no further configuration required.
+
+### FAQ
+
+#### Why extend the template component instead of using hooks?
+
+Pages somehow always require a default HTML template and are therefore not well suited for other content types, such as XML sitemaps or other XML-only responses. Thus, the `pages.render:after` hook can’t be used to apply minification in such cases where you want to simply render a template directly instead.
+
+The `route:after` hook, on the other hand, doesn’t always pass information about the content type of the rendered response, so it’s also not a good fit here.
+
+### Further reading
+
+- [`pages.render:after`][JsUrgw]
+- [`route:after`][Q4nyFu]
+
+[JsUrgw]: https://getkirby.com/docs/reference/plugins/hooks/page-render-after
+[Q4nyFu]: https://getkirby.com/docs/reference/plugins/hooks/route-after

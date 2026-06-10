@@ -2,16 +2,16 @@
 
 declare(strict_types=1);
 
-use Kensho\Minify\Template;
+use Kensho\Minify\Output\Html;
+use Kensho\Minify\Output\Xml;
 use Kirby\Cms\App;
 
 App::plugin(name: 'kensho/minify', extends: [
-	'components' => [
-		'template' => fn(
-			App $kirby,
-			string $name,
-			string $type = 'html',
-			string $defaultType = 'html',
-		): Template => new Template(name: $name, type: $type, defaultType: $defaultType),
+	'hooks' => [
+		'page.render:after' => fn(string $contentType, string $html): string => match ($contentType) {
+			'html' => new Html(source: $html)->minify(),
+			'xml' => new Xml(source: $html)->minify(),
+			default => $html,
+		},
 	],
 ]);

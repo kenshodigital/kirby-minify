@@ -4,10 +4,12 @@ declare(strict_types=1);
 
 namespace Kensho\Minify;
 
+use Deprecated;
 use Dom\Document;
 use Dom\Node;
 use Dom\XPath;
 
+#[Deprecated(message: 'will be removed in next major version', since: '1.2')]
 abstract class Output
 {
 	private readonly Document $document;

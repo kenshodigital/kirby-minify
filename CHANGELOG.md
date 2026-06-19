@@ -9,6 +9,22 @@ The format is based on [Keep a Changelog][eUf2P4] and this project adheres to [S
 
 ## [Unreleased]
 
+## [2.0.0] - 2026-06-19
+
+### Changed
+
+- **Breaking:** Required [Kirby 5.4][RdjwFk].
+
+[RdjwFk]: https://github.com/getkirby/kirby/releases/tag/5.4.0
+
+### Removed
+
+- **Breaking:** Removed deprecated classes.
+  - `\Kensho\Minify\Output`
+  - `\Kensho\Minify\Output\Html`
+  - `\Kensho\Minify\Output\Xml`
+  - `\Kensho\Minify\Template`
+
 ## [1.2.0] - 2026-06-19
 
 ### Added

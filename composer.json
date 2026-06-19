@@ -33,6 +33,9 @@
 		"kenshodigital/kirby-xhtml": "^2.0"
 	},
 	"autoload": {
+		"files": [
+			"helpers.php"
+		],
 		"psr-4": {
 			"Kensho\\Minify\\": "src"
 		}

@@ -16,7 +16,7 @@ The plugin applies post-processing to page-based HTML and XML output. It removes
 ### Installation
 
 ```shell
-composer require kenshodigital/kirby-minify ^1.1
+composer require kenshodigital/kirby-minify ^1.2
 ```
 
 ### Setup

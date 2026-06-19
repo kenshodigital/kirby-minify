@@ -9,6 +9,24 @@ The format is based on [Keep a Changelog][eUf2P4] and this project adheres to [S
 
 ## [Unreleased]
 
+## [1.2.0] - 2026-06-19
+
+### Added
+
+- New helper function.
+  - `\Kensho\Minify\minify`
+
+### Changed
+
+- Simplified implementation.
+
+### Deprecated
+
+- `Output` classes are only kept for backward compatibility and will be removed in next major version.
+  - `\Kensho\Minify\Output`
+  - `\Kensho\Minify\Output\Html`
+  - `\Kensho\Minify\Output\Xml`
+
 ## [1.1.1] - 2026-06-19
 
 ### Fixed

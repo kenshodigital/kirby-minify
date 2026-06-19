@@ -13,7 +13,7 @@ The format is based on [Keep a Changelog][eUf2P4] and this project adheres to [S
 
 ### Fixed
 
-- Reveretd accidental breaking change, restored minification logic for deprecated `Template` class.
+- Reverted accidental breaking change, restored minification logic for deprecated `Template` class.
   - `\Kensho\Minify\Template`
 
 ## [1.1.0] - 2026-06-10

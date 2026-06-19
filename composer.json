@@ -25,7 +25,7 @@
 	"require": {
 		"php": "^8.5",
 		"ext-dom": "*",
-		"getkirby/cms": "^5.2",
+		"getkirby/cms": "^5.4",
 		"getkirby/composer-installer": "^1.2"
 	},
 	"replace": {

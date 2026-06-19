@@ -35,10 +35,7 @@
 	"autoload": {
 		"files": [
 			"helpers.php"
-		],
-		"psr-4": {
-			"Kensho\\Minify\\": "src"
-		}
+		]
 	},
 	"extra": {
 		"installer-name": "minify"

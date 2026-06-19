@@ -4,12 +4,14 @@ declare(strict_types=1);
 
 namespace Kensho\Minify;
 
+use Deprecated;
 use Dom\Document;
 use Dom\HTMLDocument;
 use Dom\Node;
 use Dom\XMLDocument;
 use Dom\XPath;
 
+#[Deprecated(message: 'will be removed in next major version', since: '1.1')]
 final class Template extends \Kirby\Template\Template
 {
 	public function render(array $data = []): string
